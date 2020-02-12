@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Toaster Plugin</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="toaster.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Toaster</h1>
+
+		<div class="btn btn-success" onclick="toastModule.render('success', 'success', 1500)">
+			Success
+		</div>
+
+		<div class="btn btn-warning" onclick="toastModule.render('warning', 'warning', 5000)">
+			Warning
+		</div>
+
+
+		<div class="btn btn-info" onclick="toastModule.render('info', 'info')">
+			Info
+		</div>
+
+
+		<div class="btn btn-error" onclick="toastModule.render('error', 'error', 10500)">
+			Error
+		</div>
+
+		
+	</div>
+
+	<div id="response"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>
